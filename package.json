@@ -1,0 +1,20 @@
+{
+  "name": "crud-shop",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "postinstall": "husky",
+    "format": "prettier --write .",
+    "lint": "yarn lint:client && yarn lint:server",
+    "lint:client": "cd client && yarn lint",
+    "lint:server": "cd server && yarn lint:check"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2"
+  }
+}
