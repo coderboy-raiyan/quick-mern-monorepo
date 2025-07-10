@@ -1,5 +1,5 @@
 {
-  "name": "mern-quick-monorepo",
+  "name": "richkid",
   "private": true,
   "workspaces": [
     "client",

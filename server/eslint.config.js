@@ -11,18 +11,11 @@ export default tseslint.config(
   // Base configuration for all files
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
-  {
-    // Custom rules for all files
-    rules: {
-      'no-console': 'off',
-      '@typescript-eslint/explicit-function-return-type': 'off',
-    },
-  },
+
   // Configuration for TypeScript files
   {
     files: ['**/*.ts'],
     rules: {
-      '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/no-explicit-any': 'warn',
       'no-console': 'warn',
     },

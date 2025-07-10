@@ -5,7 +5,7 @@ dotEnvConfig({ path: path.resolve(process.cwd(), '.env') })
 
 const config = {
   port: process.env.PORT || 5000,
-  env: process.env.NODE_ENV || 'development',
+  node_env: process.env.NODE_ENV as 'development' | 'production',
   db_uri: process.env.DB_URI,
 }
 

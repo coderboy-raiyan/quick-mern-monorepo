@@ -1,14 +1,9 @@
-import express, { Request, Response } from 'express'
 import http from 'http'
+import app from './app'
 import config from './config'
 import db from './db/db'
 
-const app = express()
 const server = http.createServer(app)
-
-app.get('/', (req: Request, res: Response) => {
-  return res.status(200).json({ message: 'Server is healthy' })
-})
 
 async function bootstrap(): Promise<void> {
   try {
